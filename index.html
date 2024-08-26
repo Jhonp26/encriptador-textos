@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Textos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light">
+    <button class="theme-toggle" onclick="toggleTheme()">Modo Oscuro/Claro</button>
+    <div class="container">
+        <h1>Encriptador de Textos</h1>
+        <input type="text" id="texto" placeholder="Ingresa el texto aquí">
+        <div class="button-group">
+            <button class="encriptar-btn" onclick="encriptarTexto()">🔒 Encriptar</button>
+            <button class="desencriptar-btn" onclick="desencriptarTexto()">🔓 Desencriptar</button>
+        </div>
+        <div id="resultado"></div>
+        <button class="copiar-btn" onclick="copiarAlPortapapeles()">📋 Copiar al portapapeles</button>
+        <div id="notificacion" class="notificacion">Texto copiado al portapapeles</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
